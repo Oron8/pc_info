@@ -1,0 +1,150 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  .page { background: #0c0c0c; padding: 16px; min-height: 100vh; }
+  .term-wrap {
+    background: #0c0c0c;
+    border-radius: 6px;
+    border: 1px solid #2a2a2a;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 1.55;
+    overflow: hidden;
+  }
+  .titlebar {
+    background: #1c1c1c;
+    border-bottom: 1px solid #2a2a2a;
+    padding: 7px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+  .dot-r { background: #ff5f56; }
+  .dot-y { background: #ffbd2e; }
+  .dot-g { background: #27c93f; }
+  .titlebar-center {
+    flex: 1; text-align: center; font-size: 12px; color: #888;
+    display: flex; align-items: center; justify-content: center; gap: 4px;
+  }
+  .redact {
+    display: inline-block;
+    background: #444;
+    color: #444;
+    border-radius: 2px;
+    padding: 0 3px;
+    font-size: 12px;
+    user-select: none;
+  }
+  .term-body { padding: 14px 20px 20px; }
+  .prompt-top { font-size: 13px; margin-bottom: 14px; color: #cccccc; }
+  .c-host { color: #569cd6; }
+  .c-at   { color: #cccccc; }
+  .c-path { color: #cccccc; }
+  .neo-grid { display: grid; grid-template-columns: auto 1fr; gap: 0 20px; }
+  .art-col { display: flex; flex-direction: column; user-select: none; }
+  .art-row { line-height: 1.55; white-space: pre; }
+  .sl  { color: #8855cc; }
+  .sl2 { color: #aa77ee; }
+  .invis { opacity: 0; }
+  .info-col { display: flex; flex-direction: column; }
+  .info-line { line-height: 1.55; }
+  .ih   { color: #569cd6; font-weight: bold; }
+  .iat  { color: #cccccc; font-weight: bold; }
+  .isep { color: #555; }
+  .ik   { color: #569cd6; }
+  .iv   { color: #cccccc; }
+  .ipct { color: #e74856; font-weight: bold; }
+  .col-swatch { width: 22px; height: 14px; display: inline-block; }
+  .cursor {
+    display: inline-block; width: 8px; height: 15px;
+    background: #cccccc; vertical-align: text-bottom;
+    animation: blink 1.1s step-start infinite; margin-left: 1px;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+</style>
+
+<div class="page">
+<div class="term-wrap">
+
+  <div class="titlebar">
+    <div class="dot dot-r"></div>
+    <div class="dot dot-y"></div>
+    <div class="dot dot-g"></div>
+    <div class="titlebar-center">
+      <span>ssh &nbsp;</span><span class="redact">████████</span><span>@GAMER-STATION — CMD</span>
+    </div>
+  </div>
+
+  <div class="term-body">
+
+    <div class="prompt-top">
+      <span class="redact">███████</span><span class="c-at">@</span><span class="c-host">GAMER-STATION</span><span class="c-path"> C:\Users\</span><span class="redact">███████</span><span class="c-at">&gt;</span> fastfetch
+    </div>
+
+    <div class="neo-grid">
+      <div class="art-col">
+        <div class="art-row"><span class="sl">////////////////</span> <span class="sl">////////////////</span></div>
+        <div class="art-row"><span class="sl">////////////////</span> <span class="sl">////////////////</span></div>
+        <div class="art-row"><span class="sl">////////////////</span> <span class="sl">////////////////</span></div>
+        <div class="art-row"><span class="sl">////////////////</span> <span class="sl">////////////////</span></div>
+        <div class="art-row"><span class="sl">////////////////</span> <span class="sl">////////////////</span></div>
+        <div class="art-row"><span class="sl">////////////////</span> <span class="sl">////////////////</span></div>
+        <div class="art-row"><span class="sl">////////////////</span> <span class="sl">////////////////</span></div>
+        <div class="art-row"><span class="invis">//////////////// ////////////////</span></div>
+        <div class="art-row"><span class="sl2">////////////////</span> <span class="sl2">////////////////</span></div>
+        <div class="art-row"><span class="sl2">////////////////</span> <span class="sl2">////////////////</span></div>
+        <div class="art-row"><span class="sl2">////////////////</span> <span class="sl2">////////////////</span></div>
+        <div class="art-row"><span class="sl2">////////////////</span> <span class="sl2">////////////////</span></div>
+        <div class="art-row"><span class="sl2">////////////////</span> <span class="sl2">////////////////</span></div>
+        <div class="art-row"><span class="sl2">////////////////</span> <span class="sl2">////////////////</span></div>
+        <div class="art-row"><span class="sl2">////////////////</span> <span class="sl2">////////////////</span></div>
+        <div class="art-row"><span class="sl2">////////////////</span> <span class="sl2">////////////////</span></div>
+        <div class="art-row"><span class="sl2">////////////////</span> <span class="sl2">////////////////</span></div>
+        <div class="art-row"><span class="sl2">////////////////</span> <span class="sl2">////////////////</span></div>
+        <div class="art-row"><span class="invis">//////////////// ////////////////</span></div>
+        <div class="art-row"><span class="invis">//////////////// ////////////////</span></div>
+        <div class="art-row"><span class="invis">//////////////// ////////////////</span></div>
+        <div class="art-row"><span class="invis">//////////////// ////////////////</span></div>
+      </div>
+
+      <div class="info-col">
+        <div class="info-line"><span class="redact">███████</span><span class="iat">@</span><span class="ih">GAMER-STATION</span></div>
+        <div class="info-line"><span class="isep">--------------------------</span></div>
+        <div class="info-line"><span class="ik">OS</span><span class="iv">: Windows 11 Pro (25H2) x86_64</span></div>
+        <div class="info-line"><span class="ik">Kernel</span><span class="iv">: WIN32_NT 10.0.26200.8457</span></div>
+        <div class="info-line"><span class="ik">Uptime</span><span class="iv">: 8 hours, 20 mins</span></div>
+        <div class="info-line"><span class="ik">Shell</span><span class="iv">: CMD 10.0.26100.8328</span></div>
+        <div class="info-line"><span class="ik">WM</span><span class="iv">: Internal</span></div>
+        <div class="info-line"><span class="ik">WM Theme</span><span class="iv">: Custom - Blue (System: Dark, Apps: Dark)</span></div>
+        <div class="info-line"><span class="ik">Theme</span><span class="iv">: Fluent</span></div>
+        <div class="info-line"><span class="ik">Icons</span><span class="iv">: Recycle Bin</span></div>
+        <div class="info-line"><span class="ik">Font</span><span class="iv">: Segoe UI (12pt) [Caption / Menu / Message / Status]</span></div>
+        <div class="info-line"><span class="ik">Terminal</span><span class="iv">: Windows Console 10.0.26100.8328</span></div>
+        <div class="info-line"><span class="ik">Terminal Font</span><span class="iv">: Consolas (16pt)</span></div>
+        <div class="info-line"><span class="ik">CPU</span><span class="iv">: AMD Ryzen 5 9600X (12) @ 5.45 GHz</span></div>
+        <div class="info-line"><span class="ik">GPU 1</span><span class="iv">: AMD Radeon™ Graphics @ 2.20 GHz (485.76 MiB) [Discrete]</span></div>
+        <div class="info-line"><span class="ik">GPU 2</span><span class="iv">: AMD Radeon RX 9060 XT @ 2.78 GHz (15.81 GiB) [Discrete]</span></div>
+        <div class="info-line"><span class="ik">Memory</span><span class="iv">: 21.07 GiB / 31.16 GiB </span><span class="ipct">(68%)</span></div>
+        <div class="info-line"><span class="ik">Swap</span><span class="iv">: 256.00 MiB / 17.00 GiB </span><span class="ipct">(1%)</span></div>
+        <div class="info-line"><span class="ik">Disk (C:\)</span><span class="iv">: 847.75 GiB / 952.91 GiB </span><span class="ipct">(89%)</span><span class="iv"> - NTFS</span></div>
+        <div class="info-line"><span class="ik">Local IP (Ethernet)</span><span class="iv">: </span><span class="redact">███████████████</span></div>
+        <div class="info-line"><span class="ik">Locale</span><span class="iv">: es-AR</span></div>
+        <div class="info-line">&nbsp;</div>
+        <div class="info-line">
+          <span class="col-swatch" style="background:#1c1c1c;border:1px solid #444"></span><span class="col-swatch" style="background:#c50f1f"></span><span class="col-swatch" style="background:#13a10e"></span><span class="col-swatch" style="background:#c19c00"></span><span class="col-swatch" style="background:#0037da"></span><span class="col-swatch" style="background:#881798"></span><span class="col-swatch" style="background:#3a96dd"></span><span class="col-swatch" style="background:#cccccc"></span>
+        </div>
+        <div class="info-line">
+          <span class="col-swatch" style="background:#767676"></span><span class="col-swatch" style="background:#e74856"></span><span class="col-swatch" style="background:#16c60c"></span><span class="col-swatch" style="background:#f9f1a5"></span><span class="col-swatch" style="background:#3b78ff"></span><span class="col-swatch" style="background:#b4009e"></span><span class="col-swatch" style="background:#61d6d6"></span><span class="col-swatch" style="background:#f2f2f2"></span>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:12px; font-size:13px;">
+      <span class="redact">███████</span><span class="c-at">@</span><span class="c-host">GAMER-STATION</span><span class="c-path"> C:\Users\</span><span class="redact">███████</span><span class="c-at">&gt; </span><span class="cursor"></span>
+    </div>
+
+  </div>
+</div>
+</div>
